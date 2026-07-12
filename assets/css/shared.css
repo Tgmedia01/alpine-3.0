@@ -132,7 +132,8 @@ nav.main-nav.in{transform:translateY(0)}
 .acred-item:hover{transform:translateY(-2px);opacity:.85}
 
 /* all acred logo images */
-.acred-item img{height:56px;width:auto;max-width:175px;object-fit:contain;display:block}
+.acred-item img{height:56px;width:auto;max-width:175px;object-fit:contain;display:block;filter:grayscale(0) brightness(2.1);opacity:1!important;transition:filter .3s ease}
+.acred-item:hover img[src*="Chas_logo"]{filter:none}
 
 /* placeholder fallback (kept for any pages still using span) */
 .acred-item .placeholder{font-family:var(--fd);font-weight:700;font-size:.78rem;letter-spacing:.05em;text-transform:uppercase;border:1.5px solid rgba(255,255,255,.55);padding:.5rem .9rem;line-height:1;text-align:center;color:rgba(255,255,255,.55);transition:border-color .35s,color .35s,background .35s}
